@@ -1,0 +1,32 @@
+.preloading {
+    height: 300px;
+    width: 200px;
+    position: relative;
+}
+
+.logo {
+    background-image: url(./../img/html5.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.white-and-black {
+    filter: saturate(0);
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+}
+
+.progress-bar::after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  background: #e44d2678;
+  right: 0;
+  transform: translateX(50%)
+}

@@ -1,7 +1,30 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
 .preloading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    transition: opacity 1.2s;
+    opacity: 1;
+ }
+
+.preloading-content {
     height: 300px;
     width: 200px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -19,6 +42,7 @@
 .progress-bar {
     position: absolute;
     top: 0;
+    transition: width 200ms;
 }
 
 .progress-bar::after {
@@ -29,4 +53,8 @@
   background: #e44d2678;
   right: 0;
   transform: translateX(50%)
+}
+
+img {
+    max-width: 100%;
 }
